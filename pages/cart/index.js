@@ -22,7 +22,7 @@
      },
      /**
       * 生命周期函数--监听页面加载
-      */
+      */ 
      onShow: function (options) {
          const address = wx.getStorageSync("address");
          const cart = wx.getStorageSync("cart") || [];

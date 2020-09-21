@@ -11,7 +11,7 @@
 		 indicator-dots
 		>
 			<swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
-				<navigator>
+				<navigator url="{{item.navigator_url}}">
 					<image
 					 class=""
 					 src="{{item.image_src}}"
@@ -25,7 +25,12 @@
 
 	<!-- 导航开始 -->
 	<view class="index_cate">
-		<navigator wx:for="{{catesList}}" wx:key="name">
+		<navigator
+		 wx:for="{{catesList}}"
+		 wx:key="name"
+		 url="/pages/category/index"
+		 open-type="switchTab"
+		>
 			<image src="{{item.image_src}}" mode="widthFix" />
 		</navigator>
 	</view>
@@ -54,7 +59,7 @@
 				<navigator
 				 class=""
 				 target=""
-				 url=""
+				 url="{{item2.navigator_url}}"
 				 open-type="navigate"
 				 wx:for="{{item1.product_list}}"
 				 wx:for-item="item2"

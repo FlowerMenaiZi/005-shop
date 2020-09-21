@@ -1,2 +1,23 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+	<view>
+		莫得权限
+	</view>
+
+	<view class="order_main">
+		<view class="order_item">
+			<view class="order_no_row">
+				<view class="order_no_text">订单编号</view>
+				<view class="order_no_value">HMDD20190812000000001104</view>
+			</view>
+			<view class="order_price_row">
+				<view class="order_price_text">订单价格</view>
+				<view class="order_price_value">￥13618</view>
+			</view>
+			<view class="order_time_row">
+				<view class="order_time_text">订单日期</view>
+				<view class="order_time_value">2020/9/20 下午17:35:20</view>
+			</view>
+		</view>
+	</view>
+</Tabs>
+
